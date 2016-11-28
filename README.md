@@ -1,5 +1,8 @@
 jQuery Snowfall plugin
 ======================
+Full page Snow falling plugin with jQuery
+
+Source based [kopipejst/jqSnow](https://github.com/kopipejst/jqSnow)
 
 Version 1.0
 ---
