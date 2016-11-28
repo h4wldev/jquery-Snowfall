@@ -1,5 +1,6 @@
 jQuery Snowfall plugin
 ======================
+![](https://raw.githubusercontent.com/h4wldev/jquery-Snowfall/master/img.png)
 Full page Snow falling plugin with jQuery
 
 Source based [kopipejst/jqSnow](https://github.com/kopipejst/jqSnow)
