@@ -4,9 +4,7 @@ jQuery Snowfall plugin
 Version 1.0
 ---
 
-Bug fixes, removed `requestAnimationFrame` polyfill.
-
-Updated to use [gulpjs](http://gulpjs.com/) for build process.
+Initial Version
 
 =====================
 
