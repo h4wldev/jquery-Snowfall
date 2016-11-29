@@ -3,6 +3,7 @@
 (function($) {
 	$.snowfall = {
         intervals: [],
+        $wrapper: null,
         start: function(options, $wrapper) {
             var options = $.extend({}, {
                 size: {
@@ -31,6 +32,9 @@
 
             var $snowfall = $('<div class="flake" />').css({'position': 'absolute', 'top': '-50px'}).html(options.content);
 
+            $.snowfall.$wrapper = $wrapper;
+            $.snowfall.$wrapper.show();
+
             $.snowfall.intervals.push(setInterval(function() {
                 var wrapperWidth = $wrapper.width(),
                     wrapperHeight = $wrapper.height(),
@@ -54,7 +58,11 @@
         },
         stop: function() {
             $.snowfall.intervals.forEach(function(interval) {
-               clearInterval(interval);
+                $.snowfall.$wrapper.hide();
+                $.snowfall.$wrapper.children('div').each(function() {
+                    $(this).remove();
+                });
+                clearInterval(interval);
             });
         }
     };
