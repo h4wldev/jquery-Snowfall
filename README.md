@@ -10,9 +10,9 @@ Version 1.0
 
 Initial Version
 
-=====================
+---
 
-###options
+### options
 ```JavaScript
 size {min, max},  (default: {10, 20})
 interval,         (default: 500)
